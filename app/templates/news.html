@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block title %}
+<title>First Store - News {{region}}</title>
+{% endblock %}
+
+{% block content %}
+{% if region %}
+<h2>News for {{region}}</h2>
+{% else %}
+<h2>Global news</h2>
+{% endif %}
+{% endblock %}

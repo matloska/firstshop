@@ -1,0 +1,20 @@
+{% extends 'main.html' %}
+{% block title %}
+<title>First Store - Products</title>
+{% endblock %}
+
+{% block content %}
+<h2>Products</h2>
+{% for p in product_list %}
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{p.Name}}  {{p.Price}}$</h5>
+      <p class="card-text">{{p.Description}}</p>
+      <a href="#" class="btn btn-primary">Purchase Now !</a>
+    </div>
+  </div>
+
+
+{% endfor %}
+
+{% endblock %}
